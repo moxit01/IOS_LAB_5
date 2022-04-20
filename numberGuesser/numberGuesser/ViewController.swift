@@ -21,10 +21,21 @@ class ViewController: UIViewController {
         
         answerLabel.text = String(answerVal)
         
+        UIView.animate(withDuration: 0.5) {
+            () -> Void in
+            self.resultLabel.alpha = 1
+        
         if(answerVal == guess){
             self.resultLabel.text = NSLocalizedString("congratulations", comment: "You win")
         } else {
             self.resultLabel.text = NSLocalizedString("better luck next time", comment: "You loss")
+        }
+        }
+        
+        UIView.animate(withDuration: 2) {
+            () -> Void in
+            self.resultLabel.alpha = 0
+            
         }
         
         if(answerVal == guess){

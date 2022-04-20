@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  numberGuesser
+
+  Created by Moxit Shah on 20/04/22.
+  
+*/
+"congratulations" = "toutes nos félicitations";
+"better luck next time" = "plus de chance la prochaine fois";
